@@ -1,0 +1,21 @@
+upper=lower=digits=space=spclchar=0
+with open("sai.txt",'r') as f:                        
+    S=f.read()
+for i in S:
+ ch1=ord(i)
+ if ch1>=65 and ch1<=90:
+    upper+=1
+ elif ch1>=97 and ch1<=122:
+    lower+=1
+ elif ch1>=48 and ch1<=57:
+    digits+=1
+ elif ch1>=0 and ch1<=32:
+    space+=1
+ else:
+    spclchar+=1
+print("the content")
+print("the upper case letters",upper)
+print("the lowercase letters",lower)
+print("number of digits",digits)
+print("number of spaces",space)
+print("number of spcl characters",spclchar)
