@@ -1,0 +1,26 @@
+class TryCAtch
+{
+ public static void main(String args[])
+ { 
+   try
+     {
+ 	   try
+	     {
+	      System.out.println("try block");
+        int num=20/0;
+	      System.out.println(num);
+	    }
+  catch(ArithmeticException e)
+	      {
+          System.out.println("invalid input");
+ 	      }
+     
+ int a[]=new int[5];
+ a[6]=1;
+   }
+catch(ArrayIndexOutOfBoundsException e)
+      {
+	      System.out.println("enter correct array size");
+      }
+   }
+}
