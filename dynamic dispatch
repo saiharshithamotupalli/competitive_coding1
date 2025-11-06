@@ -1,0 +1,33 @@
+import java.lang.*;
+class Vehicle
+{
+  void run()
+  {
+  System.out.println("vehicle is running");
+  }
+ void SpeedLimit()
+  {
+  System.out.println("every vehicle has speedlimit");
+  }
+}
+class Bike extends Vehicle
+{
+  void run()
+    {
+      super.run();     
+      System.out.println("subcls run method");
+     }
+   void Wheels()
+   {
+    System.out.println("vehicle have wheels");
+   }
+ }
+class DMA
+{
+  public static void main(String []args)
+   {
+    Vehicle obj=new Bike();   
+    obj.run();
+    obj.SpeedLimit();
+   }
+}
