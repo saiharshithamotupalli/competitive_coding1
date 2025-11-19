@@ -1,0 +1,7 @@
+class Solution:
+    def firstRep(self ,S):
+        for i  in range(len(S)):
+            for j in range(i+1,len(S)):
+                if S[i]==S[j]:
+                    return S[j]
+        return -1
