@@ -1,0 +1,8 @@
+class Solution:
+	def firstAlphabet(self, S):
+	    S=S.split()
+	    result=""
+	    for S in S :
+	            result+=S[0]
+	    return result
+	            
