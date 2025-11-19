@@ -1,0 +1,12 @@
+
+class Solution:
+    def checkPangram(self,s):
+            s=s.upper()
+            letters=set()
+            for i in s:
+                if i.isalpha():
+                    letters.add(i)
+            if len(letters)==26:
+                return True
+            else:
+                return False
