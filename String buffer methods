@@ -1,0 +1,22 @@
+import java.lang.*; 
+import java.util.*;
+class BufferEx
+ {
+   public static void main(String args[])
+         {
+      			 StringBuffer s1=new StringBuffer("welcome");
+       			s1.append("java");
+           	System.out.println("after append :"+s1);
+      			 s1.insert(8,"to");
+           System.out.println("after insertion :"+s1);
+    			s1.setChar(4,'a');
+     			System.out.println("after setcharacter : "+s1);
+     			s1.delete(0,7);
+     			System.out.println("after deletion :"+s1);
+     			s1.replace(0,4,"helo");
+     			System.out.println("after replacement :"+s1);
+     			s1.reverse();
+          System.out.println("after reversing the string :"+s1);  
+     			System.out.println("Length:"+s1.length());
+}
+		}
