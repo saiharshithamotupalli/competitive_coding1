@@ -1,0 +1,31 @@
+import java.lang.*;
+import java.util.*;
+class Fibonacci 
+{        
+  public static void main(String  args[])
+      {
+                            import java.lang.*;
+        import java.util.*;
+        class Fibonacci 
+                             {        
+         public static void main(String  args[])
+             {
+                  int n,ft,st,nt;
+                  ft=0;
+                  st=1;                       
+                 Scanner s=new Scanner(System.in);
+                System.out.println("enter the n value:");
+                n=s.nextInt();
+ 			          System.out.println("fibonacci series" +n+ "terms");
+             for(int i=1;i<=n;i++)
+              {
+                  System.out.println(ft);
+                  nt=ft+st;
+                  ft=st;
+                  st=nt;
+              }
+      }
+}
+
+
+
