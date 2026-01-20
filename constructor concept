@@ -1,0 +1,39 @@
+import java.lang.*;
+class Student
+  {
+     String name;
+     int  age;
+     Student ()
+       {
+    		name="unknown";
+ 	    	age= 0;
+         }
+ 	  Student (String n)
+   	 	{
+         name=n;
+		     age=0;
+		     }
+	  Student (String n, int a)
+   		{
+          name=n;
+   	     age=a;
+      	}
+  	  void GetMethod()
+  		{
+		      System.out.print( name +" " +age );
+ 		        }
+               }
+class  CONSTRUCTOR_OVERLOADING
+      {
+ 	public  static void main(String args[])
+	     {
+ 		Student obj =new Student();
+		Student obj1=new Student("Harshitha");
+		Student obj2=new Student("Sai", 21);
+     obj.GetMethod();
+	   obj1.GetMethod();
+		obj2.GetMethod();
+		}
+}
+	
+			
